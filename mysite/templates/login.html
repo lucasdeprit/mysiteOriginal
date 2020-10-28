@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formulario</title>
+</head>
+<body>
+<form>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit"/>
+
+    <label for = "nombre">introduce tu nombre:</label>
+    <input id="nombre" type="text" name="nombre" maxlength="100" required>
+    <label for="email">introduce tu mail</label>
+    <input type="text" id="email" maxlength="20" required>
+
+</form>
+
+</body>
+</html>
